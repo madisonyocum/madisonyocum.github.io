@@ -1,0 +1,136 @@
+.page {
+  padding-block: clamp(1.5rem, 4vw, 3rem) 0;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--step--1);
+  color: var(--ink-50);
+  transition: color var(--dur-fast) var(--ease-soft);
+}
+
+.back span {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.back:hover {
+  color: var(--ink);
+}
+
+.back:hover span {
+  transform: translateX(-3px);
+}
+
+.title {
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: var(--step-3);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+
+.premise {
+  margin-top: 0.85rem;
+  max-width: 46ch;
+  font-size: var(--step-1);
+  color: var(--ink-70);
+}
+
+/* Rounds and clips the media inside, matching the cards on /work. */
+.mediaWrap {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--line-soft);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  gap: clamp(1.75rem, 4vw, 4rem);
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  padding-top: clamp(1.5rem, 3vw, 2.25rem);
+  border-top: 1px solid var(--line-soft);
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  max-width: 58ch;
+}
+
+.prose p {
+  margin-top: 0.5rem;
+  color: var(--ink-70);
+  font-size: var(--step-0);
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1.5rem;
+  margin-top: clamp(1.35rem, 3vw, 2rem);
+}
+
+/* Secondary actions match the outlined pills on the work cards. */
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.15rem;
+  border-radius: 999px;
+  font-size: var(--step--1);
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition:
+    box-shadow var(--dur-fast) var(--ease-soft),
+    opacity var(--dur-fast) var(--ease-soft);
+}
+
+.action:hover {
+  box-shadow: inset 0 0 0 1px var(--ink-35);
+}
+
+/* The live product is the point of the page - give it weight. */
+.action[data-primary] {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: none;
+}
+
+.action[data-primary]:hover {
+  box-shadow: none;
+  opacity: 0.86;
+}
+
+.metric {
+  font-size: var(--step--1);
+  color: var(--ink-50);
+}
+
+.action span[aria-hidden] {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.action:hover {
+  border-bottom-color: var(--ink);
+}
+
+.action:hover span[aria-hidden] {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 52rem) {
+  .body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

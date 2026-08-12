@@ -1,0 +1,85 @@
+.footer {
+  margin-top: clamp(2.5rem, 5.5vw, 5rem);
+  padding-block: clamp(1rem, 2vw, 1.5rem) clamp(0.75rem, 1.5vw, 1.25rem);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.5rem, 3vw, 2.5rem) 2rem;
+  padding-top: clamp(1.5rem, 3vw, 2.25rem);
+  border-top: 1px solid var(--line-soft);
+}
+
+.name {
+  font-size: var(--step-0);
+  font-weight: 500;
+}
+
+.role {
+  font-size: var(--step--1);
+  color: var(--ink-50);
+  margin-top: 0.15rem;
+}
+
+.contact {
+  display: flex;
+  gap: clamp(1rem, 2.4vw, 2rem);
+  font-size: var(--step--1);
+  justify-self: end;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--ink-50);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition:
+    color var(--dur-fast) var(--ease-soft),
+    border-color var(--dur-fast) var(--ease-soft);
+}
+
+.link span[aria-hidden] {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--line);
+}
+
+.link:hover span[aria-hidden] {
+  transform: translate(2px, -2px);
+}
+
+.colophon {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem 2rem;
+  margin-top: clamp(1.25rem, 3vw, 2.5rem);
+  font-size: var(--step--1);
+  color: var(--ink-35);
+}
+
+.aside {
+  text-align: right;
+}
+
+@media (max-width: 40rem) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact {
+    justify-self: start;
+  }
+
+  .aside {
+    text-align: left;
+  }
+}
