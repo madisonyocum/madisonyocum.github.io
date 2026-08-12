@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { ProjectImage } from "@/content/projects";
+import { asset } from "@/lib/asset";
 import styles from "./ProjectMedia.module.css";
 
 type ProjectMediaProps = {
@@ -33,7 +34,7 @@ export function ProjectMedia({
       {image ? (
         <Image
           className={styles.image}
-          src={image.src}
+          src={asset(image.src)}
           alt={image.alt}
           width={image.width}
           height={image.height}

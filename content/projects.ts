@@ -93,7 +93,7 @@ export const projects: Project[] = [
       alt: "Virtual Vinyl: a record on a turntable beside a now-playing panel with playback controls",
     },
     caseImage: {
-      src: "/images/vinyl-casestudy.png",
+      src: "/images/vinyl-casestudy.jpg",
       width: 2592,
       height: 1634,
       alt: "Virtual Vinyl: a record on a turntable beside a now-playing panel with playback controls",
@@ -134,7 +134,7 @@ export const projects: Project[] = [
       alt: "Forecast AI: a Create Forecasts screen listing AI-generated forecast options beside a prompt box",
     },
     caseImage: {
-      src: "/images/forecast-casestudy.png",
+      src: "/images/forecast-casestudy.jpg",
       width: 2592,
       height: 1634,
       alt: "Forecast AI: a Create Forecasts screen listing AI-generated forecast options beside a prompt box",
@@ -178,7 +178,7 @@ export const projects: Project[] = [
       alt: "Radius Planning: a campaign map of San Francisco with plotted locations and a radius control panel",
     },
     caseImage: {
-      src: "/images/radius-casestudy.png",
+      src: "/images/radius-casestudy.jpg",
       width: 2592,
       height: 1634,
       alt: "Radius Planning: a campaign map of San Francisco with plotted locations and a radius control panel",
@@ -222,7 +222,7 @@ export const projects: Project[] = [
       alt: "Prism: a dark prototype library listing named prototypes, with a preview panel open over it",
     },
     caseImage: {
-      src: "/images/prism-casestudy.png",
+      src: "/images/prism-casestudy.jpg",
       width: 2592,
       height: 1634,
       alt: "Prism: a dark prototype library listing named prototypes, with a preview panel open over it",
@@ -267,7 +267,7 @@ export const projects: Project[] = [
       alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
     },
     caseImage: {
-      src: "/images/rac-casestudy.png",
+      src: "/images/rac-casestudy.jpg",
       width: 2592,
       height: 1634,
       alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
