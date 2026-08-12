@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 /**
- *   default      -> /code, i.e. a repo named "code" on GitHub Pages
- *   BASE_PATH="" -> served at a domain root
+ * Where the site is mounted.
+ *   default            -> a domain root, e.g. madisonyocum.github.io
+ *   BASE_PATH="/thing" -> a subpath, e.g. a project repo on GitHub Pages
  */
-const basePath = process.env.BASE_PATH ?? "/code";
+const basePath = process.env.BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,

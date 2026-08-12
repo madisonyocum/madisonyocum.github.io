@@ -1,7 +1,7 @@
 # Portfolio - coded work
 
 A small index of things I've designed and built, plus a short case study for
-each. Live at **https://madisonyocum.github.io/code/**
+each. Live at **https://madisonyocum.github.io**
 
 ## Stack
 
@@ -27,7 +27,7 @@ Editing content never means touching a component.
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000/code
+npm run dev      # http://localhost:3000
 npm run build    # static export into out/
 npm run typecheck
 ```
@@ -37,5 +37,6 @@ npm run typecheck
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds a static
 export and publishes it to GitHub Pages.
 
-The site is mounted at `/code` because that is this repo's Pages path. To serve
-it from a domain root instead, build with `BASE_PATH=""`.
+This is a GitHub *user* site repo, so Pages serves it at the domain root and
+`basePath` is empty. To mount it on a subpath instead - a project repo, say -
+build with `BASE_PATH="/thing"`.

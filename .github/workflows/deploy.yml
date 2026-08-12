@@ -29,7 +29,7 @@ jobs:
 
       - run: npm ci
 
-      # basePath defaults to /code, which matches this repo's Pages URL.
+      # A user-site repo serves at the domain root, so no basePath.
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
