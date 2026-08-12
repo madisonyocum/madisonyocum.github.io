@@ -96,7 +96,7 @@ export const projects: Project[] = [
       src: "/images/vinyl-casestudy.jpg",
       width: 2592,
       height: 1634,
-      alt: "Virtual Vinyl: a record on a turntable beside a now-playing panel with playback controls",
+      alt: "Virtual Vinyl: the start screen overlapping the player, where a record spins beside track details and playback controls",
     },
     ratio: 16 / 10,
     // TODO(madison): draft copy - rewrite in your own words before the interview.
