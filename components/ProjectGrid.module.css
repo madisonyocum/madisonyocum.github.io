@@ -37,8 +37,9 @@
 }
 
 .title {
-  font-size: var(--step-2);
-  line-height: 1.15;
+  /* Between step-1 and step-2: 24px at 1440. */
+  font-size: clamp(1.1875rem, 1.1rem + 0.45vw, 1.5rem);
+  line-height: 1.2;
   letter-spacing: -0.025em;
   font-weight: 500;
   text-wrap: balance;
