@@ -283,15 +283,14 @@ export const projects: Project[] = [
     slug: "prism",
     title: "Prism Platform & Agentic Workflow",
     tagline: "A platform, and the agent workflow inside it",
-    // TODO(madison): draft - replace with what this actually does.
     summary:
-      "A platform interface and the agentic workflow that runs inside it, designed and built together. The hard part was visibility and control: showing what the system is doing, and letting people step in.",
-    tag: "Agentic Workflow & Front-end",
+      "A platform and the agentic workflow that runs inside it, built by a team at Elsewhen. I helped define how the workflow behaved and coded the prototypes we tested it with; another lead set up the systems and the production front-end.",
+    tag: "Agentic Workflow & Prototyping",
     context: "Elsewhen",
     tint: "#e3e5e6",
     year: "2026",
     status: "Shipped",
-    role: "Product Design + Front-end",
+    role: "Product Design + Prototyping",
     technologies: ["React", "TypeScript"],
     liveUrl: "https://prism.elsewhen.app/",
     github: undefined,
@@ -310,16 +309,14 @@ export const projects: Project[] = [
       alt: "Prism: a dark prototype library listing named prototypes, with a preview panel open over it",
     },
     ratio: 16 / 10,
-    // TODO(madison): draft copy, written from the project name alone - check
-    // it against what actually happened before the interview.
     detail: {
       premise:
-        "A platform interface and the agentic workflow that runs inside it, designed and built together.",
+        "A platform interface and the agentic workflow that runs inside it, built by a team at Elsewhen.",
       why: "Agentic features are easy to demo and hard to trust. People need to see what the system is doing, understand why, and step in when it gets something wrong - so the design problem was less about the model than about visibility and control.",
-      what: "I designed the platform surface and the agent workflow, and built the front-end. Working in code let me tune the moments that decide whether people trust it - progress, interruption, review - against real behaviour instead of static frames.",
+      what: "I helped define the agentic workflow - what the agent does unprompted, what it hands back, and where a person steps in - and coded the prototypes we tested those decisions against. Another lead set up the systems and the production front-end. Prototyping in code meant the moments that decide whether people trust it, like progress, interruption and review, were settled against real behaviour rather than static frames.",
       // TODO(madison): replace with the real outcome.
       impact:
-        "The workflow shipped as part of the platform rather than staying a concept, and the patterns worked out here - how a running agent reports itself, how a person interrupts it - carry across the rest of the product.",
+        "The workflow shipped as part of the platform rather than staying a concept, and the patterns the prototypes settled - how a running agent reports itself, how a person interrupts it - carry across the rest of the product.",
     },
   },
 ];
