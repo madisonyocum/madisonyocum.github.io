@@ -111,6 +111,49 @@ export const projects: Project[] = [
   },
 
   {
+    slug: "rac-fm",
+    title: "RAC.FM",
+    tagline: "A radio station as an interface experiment",
+    summary:
+      "An experimental music experience where the interaction is the product, blending interface design, motion and front-end development. It found an audience of 80k+ and became a genuine stress test of instinctive decisions.",
+    tag: "Design + Development",
+    context: "rac.fm",
+    tint: "#e4e4de",
+    year: "2025",
+    status: "Shipped",
+    role: "Design + Development",
+    metric: "80k+ views",
+    // TODO(madison): confirm the real stack.
+    technologies: ["Next.js", "TypeScript", "CSS"],
+    liveUrl: "https://rac.fm/",
+    github: undefined,
+    figmaUrl:
+      "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-80075&t=KevKYAIfeBVdZUNG-1",
+    image: {
+      src: "/images/rac-tile.png",
+      width: 816,
+      height: 512,
+      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
+    },
+    caseImage: {
+      src: "/images/rac-casestudy.jpg",
+      width: 2592,
+      height: 1634,
+      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
+    },
+    ratio: 16 / 10,
+    // TODO(madison): draft copy - rewrite in your own words.
+    detail: {
+      premise:
+        "An experimental digital music experience blending interface design, interaction and front-end development.",
+      why: "I wanted a project where the interaction was the product - somewhere to test how far an interface can lean on motion, sound and restraint before it stops being usable.",
+      what: "Design and front-end, end to end. It reached a far larger audience than I expected, which turned a set of instinctive decisions into a genuine stress test.",
+      impact:
+        "Over 80,000 views, on a project with no roadmap and no team behind it. At that scale the choices I had made on instinct - how much motion, how little chrome, how much to explain - stopped being matters of taste and started producing evidence.",
+    },
+  },
+
+  {
     slug: "forecast-ai",
     title: "Forecast AI",
     tagline: "AI as a collaborator, not a sidebar",
@@ -194,49 +237,6 @@ export const projects: Project[] = [
       // TODO(madison): replace with the real outcome.
       impact:
         "It exists and it runs, which is the point: instead of a deck describing how planning could work, there is a tool people can open and use. Designing in code also collapsed the usual gap between what was specified and what got built - there was no hand-off to lose anything in.",
-    },
-  },
-
-  {
-    slug: "rac-fm",
-    title: "RAC.FM",
-    tagline: "A radio station as an interface experiment",
-    summary:
-      "An experimental music experience where the interaction is the product, blending interface design, motion and front-end development. It found an audience of 80k+ and became a genuine stress test of instinctive decisions.",
-    tag: "Design + Development",
-    context: "rac.fm",
-    tint: "#e4e4de",
-    year: "2025",
-    status: "Shipped",
-    role: "Design + Development",
-    metric: "80k+ views",
-    // TODO(madison): confirm the real stack.
-    technologies: ["Next.js", "TypeScript", "CSS"],
-    liveUrl: "https://rac.fm/",
-    github: undefined,
-    figmaUrl:
-      "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-80075&t=KevKYAIfeBVdZUNG-1",
-    image: {
-      src: "/images/rac-tile.png",
-      width: 816,
-      height: 512,
-      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
-    },
-    caseImage: {
-      src: "/images/rac-casestudy.jpg",
-      width: 2592,
-      height: 1634,
-      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
-    },
-    ratio: 16 / 10,
-    // TODO(madison): draft copy - rewrite in your own words.
-    detail: {
-      premise:
-        "An experimental digital music experience blending interface design, interaction and front-end development.",
-      why: "I wanted a project where the interaction was the product - somewhere to test how far an interface can lean on motion, sound and restraint before it stops being usable.",
-      what: "Design and front-end, end to end. It reached a far larger audience than I expected, which turned a set of instinctive decisions into a genuine stress test.",
-      impact:
-        "Over 80,000 views, on a project with no roadmap and no team behind it. At that scale the choices I had made on instinct - how much motion, how little chrome, how much to explain - stopped being matters of taste and started producing evidence.",
     },
   },
 
