@@ -198,6 +198,88 @@ export const projects: Project[] = [
   },
 
   {
+    slug: "rac-fm",
+    title: "RAC.FM",
+    tagline: "A radio station as an interface experiment",
+    summary:
+      "An experimental music experience where the interaction is the product, blending interface design, motion and front-end development. It found an audience of 80k+ and became a genuine stress test of instinctive decisions.",
+    tag: "Design + Development",
+    context: "rac.fm",
+    tint: "#e4e4de",
+    year: "2025",
+    status: "Shipped",
+    role: "Design + Development",
+    metric: "80k+ views",
+    // TODO(madison): confirm the real stack.
+    technologies: ["Next.js", "TypeScript", "CSS"],
+    liveUrl: "https://rac.fm/",
+    github: undefined,
+    figmaUrl:
+      "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-80075&t=KevKYAIfeBVdZUNG-1",
+    image: {
+      src: "/images/rac-tile.png",
+      width: 816,
+      height: 512,
+      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
+    },
+    caseImage: {
+      src: "/images/rac-casestudy.jpg",
+      width: 2592,
+      height: 1634,
+      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
+    },
+    ratio: 16 / 10,
+    // TODO(madison): draft copy - rewrite in your own words.
+    detail: {
+      premise:
+        "An experimental digital music experience blending interface design, interaction and front-end development.",
+      why: "I wanted a project where the interaction was the product - somewhere to test how far an interface can lean on motion, sound and restraint before it stops being usable.",
+      what: "Design and front-end, end to end. It reached a far larger audience than I expected, which turned a set of instinctive decisions into a genuine stress test.",
+      impact:
+        "Over 80,000 views, on a project with no roadmap and no team behind it. At that scale the choices I had made on instinct - how much motion, how little chrome, how much to explain - stopped being matters of taste and started producing evidence.",
+    },
+  },
+
+  {
+    slug: "alma",
+    title: "Alma Solo Travel",
+    tagline: "A travel service, built like a product",
+    summary:
+      "My own venture: bespoke trip planning for women travelling solo, designed and built end to end - brand, site, tiers and the enquiry flow behind them. The design problem is trust, earned before anyone has spoken to a person.",
+    tag: "Design + Front-end",
+    context: "almasolotravel.com",
+    tint: "#e9e2d9",
+    year: "2026",
+    status: "Work in progress",
+    role: "Founder, Design + Front-end",
+    technologies: ["Next.js", "TypeScript", "CSS"],
+    liveUrl: "https://www.almasolotravel.com/",
+    github: undefined,
+    // TODO(madison): add the Figma node if there's a design file for this.
+    image: {
+      src: "/images/alma-tile.png",
+      width: 816,
+      height: 512,
+      alt: "Alma Solo Travel: a Where she went destinations carousel, with photo cards for Andalucia, Lisbon and Puglia",
+    },
+    caseImage: {
+      src: "/images/alma-casestudy.jpg",
+      width: 2592,
+      height: 1634,
+      alt: "Alma Solo Travel: a Where she went destinations carousel, with photo cards for Andalucia, Lisbon and Puglia",
+    },
+    ratio: 16 / 10,
+    detail: {
+      premise:
+        "A trip-planning service for women travelling solo, founded, designed and built end to end - the brand, the site, and the enquiry flow that starts every trip.",
+      why: "It started with friends asking me to plan their trips. Solo travel is sold as liberating, and it is, but the planning is a second job - and the questions that matter most to a woman going alone, like whether a neighbourhood is right or a hotel is actually good to arrive at by yourself, are the ones no booking site answers. I wanted to find out whether the research could be taken off someone entirely without taking the trip away from them, and whether I could do it as a product rather than a spreadsheet and a few emails.",
+      what: "Everything: the brand, the writing, the service design and the front-end. Three tiers - Edit, Journey and Concierge - so the amount of help is a choice rather than a package; twenty-eight destination pages; a journal; and a sample itinerary and delivery timeline on the how-it-works page, because a service you cannot see is hard to buy. The decision I care most about is the front door: a five-minute form, no call required to start, since asking a stranger to book a phone slot before they know what they want is where most of these services lose people.",
+      impact:
+        "Building it settled the parts of the service that a document would have left vague - what each tier actually contains, what the price buys, how long a plan takes and what lands in your inbox at the end. Writing those as real pages forced answers. It is not launched yet: the brand, imagery and legal pages are placeholders while I finish them, and there is no traffic or booking data to point at. What exists is the whole service, standing up and clickable, which is the version worth showing to anyone before it goes live.",
+    },
+  },
+
+  {
     slug: "prism",
     title: "Prism Platform & Agentic Workflow",
     tagline: "A platform, and the agent workflow inside it",
@@ -238,49 +320,6 @@ export const projects: Project[] = [
       // TODO(madison): replace with the real outcome.
       impact:
         "The workflow shipped as part of the platform rather than staying a concept, and the patterns worked out here - how a running agent reports itself, how a person interrupts it - carry across the rest of the product.",
-    },
-  },
-
-  {
-    slug: "rac-fm",
-    title: "RAC.FM",
-    tagline: "A radio station as an interface experiment",
-    summary:
-      "An experimental music experience where the interaction is the product, blending interface design, motion and front-end development. It found an audience of 80k+ and became a genuine stress test of instinctive decisions.",
-    tag: "Design + Development",
-    context: "rac.fm",
-    tint: "#e4e4de",
-    year: "2025",
-    status: "Shipped",
-    role: "Design + Development",
-    metric: "80k+ views",
-    // TODO(madison): confirm the real stack.
-    technologies: ["Next.js", "TypeScript", "CSS"],
-    liveUrl: "https://rac.fm/",
-    github: undefined,
-    figmaUrl:
-      "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-80075&t=KevKYAIfeBVdZUNG-1",
-    image: {
-      src: "/images/rac-tile.png",
-      width: 816,
-      height: 512,
-      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
-    },
-    caseImage: {
-      src: "/images/rac-casestudy.jpg",
-      width: 2592,
-      height: 1634,
-      alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
-    },
-    ratio: 16 / 10,
-    // TODO(madison): draft copy - rewrite in your own words.
-    detail: {
-      premise:
-        "An experimental digital music experience blending interface design, interaction and front-end development.",
-      why: "I wanted a project where the interaction was the product - somewhere to test how far an interface can lean on motion, sound and restraint before it stops being usable.",
-      what: "Design and front-end, end to end. It reached a far larger audience than I expected, which turned a set of instinctive decisions into a genuine stress test.",
-      impact:
-        "Over 80,000 views, on a project with no roadmap and no team behind it. At that scale the choices I had made on instinct - how much motion, how little chrome, how much to explain - stopped being matters of taste and started producing evidence.",
     },
   },
 ];
