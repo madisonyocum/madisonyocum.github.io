@@ -50,6 +50,9 @@ function ProjectCard({
         <p className={styles.labels}>
           <span className={styles.tag}>{project.tag}</span>
           <span className={styles.context}>{project.context}</span>
+          {project.metric ? (
+            <span className={styles.metric}>{project.metric}</span>
+          ) : null}
         </p>
 
         <p className={styles.tagline}>{project.tagline}</p>

@@ -81,7 +81,7 @@ export const projects: Project[] = [
     year: "2026",
     status: "Shipped",
     role: "Design + Front-end",
-    metric: "~1k monthly users",
+    metric: "1k+ monthly users",
     // TODO(madison): confirm the real stack.
     technologies: ["React", "TypeScript", "Web Audio API", "CSS"],
     liveUrl: "https://www.virtualvinyl.app/",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     year: "2025",
     status: "Shipped",
     role: "Design + Development",
-    metric: "80k+ views",
+    metric: "80k+ page views",
     // TODO(madison): confirm the real stack.
     technologies: ["Next.js", "TypeScript", "CSS"],
     liveUrl: "https://rac.fm/",
