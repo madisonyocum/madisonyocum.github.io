@@ -29,6 +29,54 @@
     0 26px 50px -34px rgba(22, 20, 15, 0.5);
 }
 
+/* --- Media link -----------------------------------------------------------
+   The screenshot is a link in its own right. The label only appears on
+   hover or keyboard focus, so at rest the image is still just the image.
+--------------------------------------------------------------------------- */
+
+.mediaLink {
+  position: relative;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(22, 20, 15, 0.22);
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease-out);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: translateY(6px);
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.mediaLink:hover .overlay,
+.mediaLink:focus-visible .overlay {
+  opacity: 1;
+}
+
+.mediaLink:hover .pill,
+.mediaLink:focus-visible .pill {
+  transform: translateY(0);
+}
+
 .caption {
   display: flex;
   flex-direction: column;
@@ -179,5 +227,17 @@
   .card:hover,
   .card:focus-within {
     transform: none;
+  }
+
+  .pill {
+    transform: none;
+  }
+}
+
+/* Touch: there is no hover to reveal the label, so leave the image plain
+   and let the buttons below carry the actions. */
+@media (hover: none) {
+  .overlay {
+    display: none;
   }
 }
