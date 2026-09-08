@@ -5,12 +5,12 @@ import { ProjectMedia } from "./ProjectMedia";
 import { Reveal } from "./Reveal";
 import styles from "./ProjectGrid.module.css";
 
-const SIZES = "(max-width: 44rem) 94vw, (max-width: 68rem) 47vw, 470px";
+const SIZES = "(max-width: 44rem) 94vw, 47vw";
 
 export function ProjectGrid() {
   return (
     <section className={`shell ${styles.section}`} id="work">
-      <h1 className="srOnly">Selected work</h1>
+      <h2 className="srOnly">Selected work</h2>
 
       <ul className={styles.grid}>
         {projects.map((project, index) => (
@@ -45,15 +45,17 @@ function ProjectCard({
       />
 
       <div className={styles.caption}>
-        <h2 className={styles.title}>{project.title}</h2>
+        <div className={styles.head}>
+          <h2 className={styles.title}>{project.title}</h2>
 
-        <p className={styles.labels}>
-          <span className={styles.tag}>{project.tag}</span>
-          <span className={styles.context}>{project.context}</span>
-          {project.metric ? (
-            <span className={styles.metric}>{project.metric}</span>
-          ) : null}
-        </p>
+          <p className={styles.labels}>
+            <span className={styles.tag}>{project.tag}</span>
+            <span className={styles.context}>{project.context}</span>
+            {project.metric ? (
+              <span className={styles.metric}>{project.metric}</span>
+            ) : null}
+          </p>
+        </div>
 
         <p className={styles.tagline}>{project.tagline}</p>
         <p className={styles.summary}>{project.summary}</p>

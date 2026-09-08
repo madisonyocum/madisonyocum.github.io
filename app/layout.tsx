@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Sans, Instrument_Serif } from "next/font/google";
+import { DM_Mono, Instrument_Sans } from "next/font/google";
 
 import { ClickSound } from "@/components/ClickSound";
 import { site } from "@/content/site";
@@ -11,13 +11,12 @@ const sans = Instrument_Sans({
   variable: "--font-sans",
 });
 
-/** Used once, for the italic accent in the headline. */
-const serif = Instrument_Serif({
+/** Used once, for the accent in the headline. */
+const mono = DM_Mono({
   subsets: ["latin"],
   weight: "400",
-  style: "italic",
   display: "swap",
-  variable: "--font-serif",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -35,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <head>
         {/* Reveals are progressive enhancement: no JS, no hidden content. */}
         <noscript>

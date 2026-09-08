@@ -1,0 +1,46 @@
+.intro {
+  padding-top: clamp(1.5rem, 6vw, 5rem);
+  padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.headline {
+  max-width: 20ch;
+  font-size: clamp(2.25rem, 1.8rem + 2.4vw, 3.875rem);
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+/* The one accent in the headline: the engineering half, set in mono. */
+.accent {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  /* Mono sits optically small beside the sans, so it takes a little back. */
+  font-size: 1.06em;
+  font-weight: 400;
+  /* Mono sets loose by nature; it needs more tracking taken out than the
+     sans around it to sit at the same rhythm. */
+  letter-spacing: -0.075em;
+}
+
+.sub {
+  margin-top: clamp(1rem, 2vw, 1.4rem);
+  font-size: var(--step-0);
+  color: var(--ink-50);
+  text-wrap: pretty;
+}
+
+.link {
+  color: var(--ink-70);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1px;
+  transition:
+    color var(--dur-fast) var(--ease-soft),
+    border-color var(--dur-fast) var(--ease-soft);
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--ink-35);
+}
