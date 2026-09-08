@@ -1,19 +1,31 @@
 .intro {
-  padding-top: clamp(0.25rem, 1.5vw, 1rem);
-  padding-bottom: clamp(1.5rem, 3.5vw, 2.75rem);
+  padding-top: clamp(1.5rem, 6vw, 5rem);
+  padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
 }
 
-.text {
-  max-width: 46ch;
-  font-size: var(--step-1);
-  line-height: 1.45;
+.headline {
+  max-width: 16ch;
+  font-size: var(--step-4);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+/* The one italic accent the serif face was loaded for. */
+.accent {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
   letter-spacing: -0.015em;
-  text-wrap: pretty;
 }
 
-/* The second sentence steps back so the introduction lands first. */
-.aside {
+.sub {
+  max-width: 52ch;
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: var(--step-0);
   color: var(--ink-50);
+  text-wrap: pretty;
 }
 
 .link {
