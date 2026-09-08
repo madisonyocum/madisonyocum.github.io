@@ -5,7 +5,7 @@ import { ProjectMedia } from "./ProjectMedia";
 import { Reveal } from "./Reveal";
 import styles from "./ProjectGrid.module.css";
 
-const SIZES = "(max-width: 44rem) 94vw, (max-width: 68rem) 47vw, 470px";
+const SIZES = "(max-width: 44rem) 94vw, 47vw";
 
 export function ProjectGrid() {
   return (
