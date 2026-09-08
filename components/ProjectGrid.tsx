@@ -45,15 +45,17 @@ function ProjectCard({
       />
 
       <div className={styles.caption}>
-        <h2 className={styles.title}>{project.title}</h2>
+        <div className={styles.head}>
+          <h2 className={styles.title}>{project.title}</h2>
 
-        <p className={styles.labels}>
-          <span className={styles.tag}>{project.tag}</span>
-          <span className={styles.context}>{project.context}</span>
-          {project.metric ? (
-            <span className={styles.metric}>{project.metric}</span>
-          ) : null}
-        </p>
+          <p className={styles.labels}>
+            <span className={styles.tag}>{project.tag}</span>
+            <span className={styles.context}>{project.context}</span>
+            {project.metric ? (
+              <span className={styles.metric}>{project.metric}</span>
+            ) : null}
+          </p>
+        </div>
 
         <p className={styles.tagline}>{project.tagline}</p>
         <p className={styles.summary}>{project.summary}</p>
