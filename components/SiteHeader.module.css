@@ -17,10 +17,10 @@
   font-weight: 600;
 }
 
-/* Small enough to sit as a bullet beside the name, never as a badge. */
+/* Sized in em so it tracks the wordmark rather than needing its own rule. */
 .mark {
-  width: 2.1em;
-  height: 2.1em;
+  width: 2.7em;
+  height: 2.7em;
   flex: none;
   margin-right: -0.1rem;
 }

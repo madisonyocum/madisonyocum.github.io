@@ -12,7 +12,7 @@
  *
  * How to add an image
  *   1. Drop the file in /public/images/
- *   2. Set `image` (card, 1632 x 1024) and `caseImage` (case study,
+ *   2. Set `image` (card, 3264 x 2048) and `caseImage` (case study,
  *      2592 x 1634) to { src, width, height, alt }
  *   Until then a labelled placeholder frame renders in its place.
  *   See public/images/README.md for the sizing rationale.
@@ -52,7 +52,7 @@ export type Project = {
   github?: string;
   /** Design file, linked from the case study. */
   figmaUrl?: string;
-  /** Card image, 1632 x 1024. */
+  /** Card image, 3264 x 2048. */
   image?: ProjectImage;
   /** Case-study image, 2592 x 1634. Falls back to `image` if absent. */
   caseImage?: ProjectImage;
@@ -88,8 +88,8 @@ export const projects: Project[] = [
     github: undefined, // TODO(madison): add repo URL to show "View source"
     image: {
       src: "/images/vinyl-tile.png",
-      width: 816,
-      height: 512,
+      width: 3264,
+      height: 2048,
       alt: "Virtual Vinyl: a record on a turntable beside a now-playing panel with playback controls",
     },
     caseImage: {
@@ -131,8 +131,8 @@ export const projects: Project[] = [
       "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-80075&t=KevKYAIfeBVdZUNG-1",
     image: {
       src: "/images/rac-tile.png",
-      width: 1632,
-      height: 1024,
+      width: 3264,
+      height: 2048,
       alt: "RAC.FM: a pink desktop-style interface with stacked windows for discography, artwork and a cult pass",
     },
     caseImage: {
@@ -172,8 +172,8 @@ export const projects: Project[] = [
       "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-127962&t=KevKYAIfeBVdZUNG-1",
     image: {
       src: "/images/forecast-tile.png",
-      width: 1632,
-      height: 1024,
+      width: 3264,
+      height: 2048,
       alt: "Forecast AI: a Create Forecasts screen listing AI-generated forecast options beside a prompt box",
     },
     caseImage: {
@@ -216,8 +216,8 @@ export const projects: Project[] = [
       "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-127962&t=KevKYAIfeBVdZUNG-1",
     image: {
       src: "/images/radius-tile.png",
-      width: 1632,
-      height: 1024,
+      width: 3264,
+      height: 2048,
       alt: "Radius Planning: a campaign map of San Francisco with plotted locations and a radius control panel",
     },
     caseImage: {
@@ -258,8 +258,8 @@ export const projects: Project[] = [
     // TODO(madison): add the Figma node if there's a design file for this.
     image: {
       src: "/images/alma-tile.png",
-      width: 1632,
-      height: 1024,
+      width: 3264,
+      height: 2048,
       alt: "Alma Solo Travel: a Where she went destinations carousel, with photo cards for Andalucia, Lisbon and Puglia",
     },
     caseImage: {
@@ -298,8 +298,8 @@ export const projects: Project[] = [
       "https://www.figma.com/design/VFDe17IEysr8gDKIsUDEVy/Ironbridge---Madison-Yocum---Portfolio-2026?node-id=7854-128337&t=KevKYAIfeBVdZUNG-1",
     image: {
       src: "/images/prism-tile.png",
-      width: 1632,
-      height: 1024,
+      width: 3264,
+      height: 2048,
       alt: "Prism: a dark prototype library listing named prototypes, with a preview panel open over it",
     },
     caseImage: {

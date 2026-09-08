@@ -1,5 +1,7 @@
+import Image from "next/image";
+
 import { site } from "@/content/site";
-import { Monogram } from "./Monogram";
+import { asset } from "@/lib/asset";
 import styles from "./SiteHeader.module.css";
 
 /** Name on the left, the full portfolio on the right. */
@@ -7,7 +9,14 @@ export function SiteHeader() {
   return (
     <header className={`shell ${styles.header}`}>
       <p className={styles.wordmark}>
-        <Monogram className={styles.mark} />
+        <Image
+          className={styles.mark}
+          src={asset("/images/my-logo.png")}
+          alt=""
+          width={256}
+          height={256}
+          priority
+        />
         {site.wordmark}
         <span className={styles.suffix}>{site.wordmarkSuffix}</span>
       </p>

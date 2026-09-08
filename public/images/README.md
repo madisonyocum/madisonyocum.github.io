@@ -4,7 +4,7 @@ Two files per project, wired up in `content/projects.ts`:
 
 | Field       | File                    | Size        | Where it shows |
 | ----------- | ----------------------- | ----------- | -------------- |
-| `image`     | `<name>-tile.png`       | 1632 × 1024 | Card on /work  |
+| `image`     | `<name>-tile.png`       | 3264 × 2048 | Card on /work  |
 | `caseImage` | `<name>-casestudy.png`  | 2592 × 1634 | /work/<slug>   |
 
 Those are 2× the measured display sizes at a 1440px viewport (816 × 512 and
