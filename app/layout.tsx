@@ -14,7 +14,7 @@ const sans = Instrument_Sans({
 /** Used once, for the accent in the headline. */
 const mono = DM_Mono({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: "400",
   display: "swap",
   variable: "--font-mono",
 });
