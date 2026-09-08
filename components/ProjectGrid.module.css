@@ -107,7 +107,7 @@
 
 .summary {
   margin-top: 0.5rem;
-  font-size: var(--step--1);
+  font-size: 0.9375rem;
   line-height: 1.55;
   color: var(--ink-70);
   text-wrap: pretty;
