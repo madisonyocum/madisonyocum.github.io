@@ -11,7 +11,7 @@
   align-items: center;
   gap: 0.7rem;
   white-space: nowrap;
-  font-size: var(--step--1);
+  font-size: 0.9375rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
@@ -19,8 +19,8 @@
 
 /* Small enough to sit as a bullet beside the name, never as a badge. */
 .mark {
-  width: 1.5em;
-  height: 1.5em;
+  width: 2.1em;
+  height: 2.1em;
   flex: none;
   margin-right: -0.1rem;
 }
