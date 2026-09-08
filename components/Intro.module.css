@@ -4,8 +4,8 @@
 }
 
 .headline {
-  max-width: 16ch;
-  font-size: var(--step-4);
+  max-width: 20ch;
+  font-size: var(--step-3);
   line-height: var(--leading-tight);
   letter-spacing: -0.035em;
   font-weight: 500;
@@ -21,8 +21,7 @@
 }
 
 .sub {
-  max-width: 52ch;
-  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  margin-top: clamp(1rem, 2vw, 1.4rem);
   font-size: var(--step-0);
   color: var(--ink-50);
   text-wrap: pretty;
