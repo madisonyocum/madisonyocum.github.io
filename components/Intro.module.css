@@ -12,12 +12,13 @@
   text-wrap: balance;
 }
 
-/* The one italic accent the serif face was loaded for. */
+/* The one accent in the headline: the engineering half, set in mono. */
 .accent {
-  font-family: var(--font-serif), Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.015em;
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  /* Mono sits optically small beside the sans, so it takes a little back. */
+  font-size: 1.06em;
+  font-weight: 500;
+  letter-spacing: -0.03em;
 }
 
 .sub {
