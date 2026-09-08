@@ -7,9 +7,9 @@
   max-width: 20ch;
   /* A step above --step-3, short of the --step-4 display size. */
   font-size: clamp(2.125rem, 1.7rem + 2.15vw, 3.5rem);
-  line-height: var(--leading-tight);
-  letter-spacing: -0.045em;
-  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+  font-weight: 400;
   text-wrap: balance;
 }
 
