@@ -52,7 +52,19 @@ function ProjectCard({
 
           <p className={styles.labels}>
             <span className={styles.tag}>{project.tag}</span>
-            <span className={styles.context}>{project.context}</span>
+            {project.liveUrl ? (
+              <a
+                className={styles.context}
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {project.context} <span aria-hidden="true">↗</span>
+                <span className="srOnly"> (opens in a new tab)</span>
+              </a>
+            ) : (
+              <span className={styles.context}>{project.context}</span>
+            )}
             {project.metric ? (
               <span className={styles.metric}>{project.metric}</span>
             ) : null}

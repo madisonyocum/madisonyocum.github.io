@@ -121,8 +121,27 @@
 }
 
 .context {
-  font-size: 0.875rem;
-  color: var(--ink-50);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9375rem;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: opacity var(--dur-fast) var(--ease-soft);
+}
+
+.context span[aria-hidden] {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+a.context:hover span[aria-hidden] {
+  transform: translate(2px, -2px);
+}
+
+a.context:hover {
+  opacity: 0.75;
 }
 
 /* The headline number, where a project has one. Sits with the labels and

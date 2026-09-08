@@ -21,6 +21,8 @@
   --line: rgba(22, 20, 15, 0.14);
   --line-soft: rgba(22, 20, 15, 0.08);
   --live: #2f6b4f;
+  /* The one non-neutral in the palette: an outbound link. */
+  --link: #2f5aa8;
 
   /* Type scale - restrained, fluid between mobile and 1440 */
   --step--1: 0.8125rem;
