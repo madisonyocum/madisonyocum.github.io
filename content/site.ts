@@ -11,6 +11,7 @@ export const site = {
   links: {
     /** The full design portfolio, hosted separately. */
     portfolio: "https://madisonyocum.com/",
+    about: "https://madisonyocum.com/about",
     linkedin: "https://www.linkedin.com/in/madison-yocum/",
     github: "https://github.com/madisonyocum",
     email: "mailto:madisonyocum@gmail.com",
