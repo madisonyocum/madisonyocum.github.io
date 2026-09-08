@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Sans, JetBrains_Mono } from "next/font/google";
+import { DM_Mono, Instrument_Sans } from "next/font/google";
 
 import { ClickSound } from "@/components/ClickSound";
 import { site } from "@/content/site";
@@ -12,7 +12,7 @@ const sans = Instrument_Sans({
 });
 
 /** Used once, for the accent in the headline. */
-const mono = JetBrains_Mono({
+const mono = DM_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   display: "swap",
