@@ -125,11 +125,16 @@
   align-items: center;
   gap: 0.25rem;
   font-size: 0.9375rem;
-  color: var(--link);
+  color: var(--ink);
+  transition: opacity var(--dur-fast) var(--ease-soft);
+}
+
+/* Only the domain is underlined - a rule running under the arrow too would
+   break around the gap between them. */
+.contextLabel {
   text-decoration: underline;
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1px;
-  transition: opacity var(--dur-fast) var(--ease-soft);
 }
 
 .context span[aria-hidden] {

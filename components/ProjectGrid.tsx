@@ -7,6 +7,11 @@ import styles from "./ProjectGrid.module.css";
 
 const SIZES = "(max-width: 44rem) 94vw, 47vw";
 
+/** The bare domain of a URL, so a link reads as the place it goes. */
+function hostOf(url: string) {
+  return new URL(url).hostname.replace(/^www\./, "");
+}
+
 export function ProjectGrid() {
   return (
     <section className={`shell ${styles.section}`} id="work">
@@ -59,7 +64,10 @@ function ProjectCard({
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                {project.context} <span aria-hidden="true">↗</span>
+                <span className={styles.contextLabel}>
+                  {hostOf(project.liveUrl)}
+                </span>{" "}
+                <span aria-hidden="true">↗</span>
                 <span className="srOnly"> (opens in a new tab)</span>
               </a>
             ) : (
