@@ -9,6 +9,7 @@
   line-height: 1.05;
   letter-spacing: -0.055em;
   font-weight: 400;
+  color: var(--ink-70);
   text-wrap: balance;
 }
 
@@ -21,6 +22,8 @@
   /* Mono sets loose by nature; it needs more tracking taken out than the
      sans around it to sit at the same rhythm. */
   letter-spacing: -0.075em;
+  /* Full ink against the grey of the sentence around it. */
+  color: var(--ink);
 }
 
 .sub {
