@@ -26,7 +26,7 @@
 .sub {
   margin-top: clamp(1rem, 2vw, 1.4rem);
   font-size: var(--step-0);
-  color: var(--ink-50);
+  color: var(--ink-70);
   text-wrap: pretty;
 }
 
