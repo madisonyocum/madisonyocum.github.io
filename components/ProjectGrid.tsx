@@ -10,7 +10,7 @@ const SIZES = "(max-width: 44rem) 94vw, (max-width: 68rem) 47vw, 470px";
 export function ProjectGrid() {
   return (
     <section className={`shell ${styles.section}`} id="work">
-      <h1 className="srOnly">Selected work</h1>
+      <h2 className="srOnly">Selected work</h2>
 
       <ul className={styles.grid}>
         {projects.map((project, index) => (

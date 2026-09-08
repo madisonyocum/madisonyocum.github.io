@@ -9,6 +9,8 @@ export const site = {
     "Selected products and prototypes I've designed and coded.",
 
   links: {
+    /** The full design portfolio, hosted separately. */
+    portfolio: "https://madisonyocum.com/",
     linkedin: "https://www.linkedin.com/in/madison-yocum/",
     github: "https://github.com/madisonyocum",
     email: "mailto:madisonyocum@gmail.com",

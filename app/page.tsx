@@ -1,3 +1,4 @@
+import { Intro } from "@/components/Intro";
 import { ProjectGrid } from "@/components/ProjectGrid";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <SiteHeader />
       <main id="main">
+        <Intro />
         <ProjectGrid />
       </main>
       <SiteFooter />

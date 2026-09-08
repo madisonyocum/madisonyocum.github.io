@@ -1,0 +1,32 @@
+.intro {
+  padding-top: clamp(0.25rem, 1.5vw, 1rem);
+  padding-bottom: clamp(1.5rem, 3.5vw, 2.75rem);
+}
+
+.text {
+  max-width: 46ch;
+  font-size: var(--step-1);
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+  text-wrap: pretty;
+}
+
+/* The second sentence steps back so the introduction lands first. */
+.aside {
+  color: var(--ink-50);
+}
+
+.link {
+  color: var(--ink-70);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1px;
+  transition:
+    color var(--dur-fast) var(--ease-soft),
+    border-color var(--dur-fast) var(--ease-soft);
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--ink-35);
+}
