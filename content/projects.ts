@@ -114,9 +114,9 @@ export const projects: Project[] = [
   {
     slug: "rac-fm",
     title: "RAC.FM",
-    tagline: "A radio station as an interface experiment",
+    tagline: "A platform for an artist's community",
     summary:
-      "An experimental music experience where the interaction is the product, blending interface design, motion and front-end development. It found an audience of 80k+ and became a genuine stress test of instinctive decisions.",
+      "A brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token. I led product direction and design and coded the front end; it launched to ~80,400 page views in week one and coverage in Billboard.",
     tag: "Design + Development",
     context: "rac.fm",
     tint: "#e4e4de",
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     ratio: 16 / 10,
     detail: {
       premise:
-        "An experimental digital music experience blending interface design, interaction and front-end development.",
+        "A brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token.",
       why: "RAC.FM is a brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token. The audience was already there and already invested; what it lacked was somewhere that belonged to the artist rather than to a streaming service, where exclusive content, new releases and token-holding sat in one place instead of scattered across platforms that owned the relationship.",
       what: "I led product direction and design: setting the strategy, running a small team - myself, a designer and a developer - and defining the component system the whole build ran on. The component system carried most of the weight: with three of us on it, consistency had to come from the system rather than from review, so a decision made once held across the whole build. I coded the front end as well, which kept the design decisions honest - anything I specified, I then had to build, so the gap between what was designed and what shipped never opened up.",
       impact:
