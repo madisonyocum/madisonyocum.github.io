@@ -146,7 +146,7 @@ export const projects: Project[] = [
     detail: {
       premise:
         "An experimental digital music experience blending interface design, interaction and front-end development.",
-      why: "I wanted a project where the interaction was the product - somewhere to test how far an interface can lean on motion, sound and restraint before it stops being usable.",
+      why: "It was an independent boutique website for André Anjos.",
       what: "Design and front-end, end to end. It reached a far larger audience than I expected, which turned a set of instinctive decisions into a genuine stress test.",
       impact:
         "Over 80,000 views, on a project with no roadmap and no team behind it. At that scale the choices I had made on instinct - how much motion, how little chrome, how much to explain - stopped being matters of taste and started producing evidence.",
