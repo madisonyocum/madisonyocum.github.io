@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { site } from "@/content/site";
 import { asset } from "@/lib/asset";
@@ -9,15 +10,17 @@ export function SiteHeader() {
   return (
     <header className={`shell ${styles.header}`}>
       <p className={styles.wordmark}>
-        <Image
-          className={styles.mark}
-          src={asset("/images/my-logo.png")}
-          alt=""
-          width={256}
-          height={256}
-          priority
-        />
-        {site.wordmark}
+        <Link className={styles.home} href="/">
+          <Image
+            className={styles.mark}
+            src={asset("/images/my-logo.png")}
+            alt=""
+            width={256}
+            height={256}
+            priority
+          />
+          {site.wordmark}
+        </Link>
         <span className={styles.suffix}>{site.wordmarkSuffix}</span>
       </p>
 

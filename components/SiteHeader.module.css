@@ -17,6 +17,20 @@
   font-weight: 600;
 }
 
+/* The mark and the name are one link home. */
+.home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: inherit;
+  transition: opacity var(--dur-fast) var(--ease-soft);
+}
+
+.home:hover,
+.home:focus-visible {
+  opacity: 0.7;
+}
+
 /* Sized in em so it tracks the wordmark rather than needing its own rule. */
 .mark {
   width: 2.7em;
