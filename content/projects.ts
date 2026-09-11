@@ -62,9 +62,10 @@ export type Project = {
   detail: {
     premise: string;
     why: string;
-    what: string;
-    /** What came of it: reach, adoption, what it changed. */
-    impact: string;
+    /** Omit when the "why" already covers the work; the section is then hidden. */
+    what?: string;
+    /** What came of it: reach, adoption, what it changed. Optional, as above. */
+    impact?: string;
   };
 };
 
@@ -145,10 +146,7 @@ export const projects: Project[] = [
     detail: {
       premise:
         "An experimental digital music experience blending interface design, interaction and front-end development.",
-      why: "RAC.FM is a brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token.",
-      what: "I led product direction and design - setting the strategy, running a pod of junior designers and front-end engineers, and defining the component system the whole build ran on. I then coded the front end too.",
-      impact:
-        "It launched to ~80,400 page views in week one and coverage in Billboard.",
+      why: "RAC.FM is a brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token. I led product direction and design - setting the strategy, running a pod of junior designers and front-end engineers, and defining the component system the whole build ran on. I then coded the front end too. It launched to ~80,400 page views in week one and coverage in Billboard.",
     },
   },
 
@@ -230,9 +228,9 @@ export const projects: Project[] = [
     // it against what actually happened before the interview.
     detail: {
       premise:
-        "A planning tool worked out in code rather than specified in Figma.",
-      why: "Planning work tends to live across spreadsheets and slide decks, so the constraints that actually shape a plan only surface late. I wanted to design against those constraints directly, in a running interface, where a decision either holds up under real data or it doesn't.",
-      what: "I designed the product and wrote the front-end. Building it meant the interaction details - state, loading, empty and error cases - were resolved as design decisions rather than deferred to hand-off.",
+        "A map interface for planning campaign radii - drawing catchments around real locations and reading the coverage they add up to.",
+      why: "Radius planning usually happens in spreadsheets and static exports, so the thing that actually decides a campaign - how far each location reaches, and where those catchments overlap - gets argued about rather than seen. I wanted the map itself to be the planning surface, not a picture of the plan produced afterwards.",
+      what: "I designed and built the map interface end to end: campaign segments plotted across a city, each carrying its own radius, with coverage redrawn live as the radius changes. Postcode and hex views read that same coverage at different grains, and day-part controls show how a campaign shifts across the day.",
       // TODO(madison): replace with the real outcome.
       impact:
         "It exists and it runs, which is the point: instead of a deck describing how planning could work, there is a tool people can open and use. Designing in code also collapsed the usual gap between what was specified and what got built - there was no hand-off to lose anything in.",

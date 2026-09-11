@@ -103,14 +103,18 @@ export default async function ProjectPage({ params }: Params) {
               <h2 className="label">Why I built it</h2>
               <p>{detail.why}</p>
             </section>
-            <section>
-              <h2 className="label">What I built</h2>
-              <p>{detail.what}</p>
-            </section>
-            <section>
-              <h2 className="label">Impact</h2>
-              <p>{detail.impact}</p>
-            </section>
+            {detail.what ? (
+              <section>
+                <h2 className="label">What I built</h2>
+                <p>{detail.what}</p>
+              </section>
+            ) : null}
+            {detail.impact ? (
+              <section>
+                <h2 className="label">Impact</h2>
+                <p>{detail.impact}</p>
+              </section>
+            ) : null}
           </div>
 
           <div className={styles.side}>
