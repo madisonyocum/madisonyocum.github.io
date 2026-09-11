@@ -146,7 +146,10 @@ export const projects: Project[] = [
     detail: {
       premise:
         "An experimental digital music experience blending interface design, interaction and front-end development.",
-      why: "RAC.FM is a brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token. I led product direction and design - setting the strategy, running a pod of junior designers and front-end engineers, and defining the component system the whole build ran on. I then coded the front end too. It launched to ~80,400 page views in week one and coverage in Billboard.",
+      why: "RAC.FM is a brand-led platform for the community around Grammy-winning artist and producer André Anjos, combining exclusive content, new music and the $RAC token. The audience was already there and already invested; what it lacked was somewhere that belonged to the artist rather than to a streaming service, where exclusive content, new releases and token-holding sat in one place instead of scattered across platforms that owned the relationship.",
+      what: "I led product direction and design: setting the strategy, running a pod of junior designers and front-end engineers, and defining the component system the whole build ran on. The component system carried most of the weight - it let a junior team ship consistent work at pace without every screen routing back through me for review. I coded the front end as well, which kept the design decisions honest: anything I specified, I then had to build, so the gap between what was designed and what shipped never opened up.",
+      impact:
+        "It launched to ~80,400 page views in week one and coverage in Billboard. The scale arrived immediately rather than accumulating, so the early structural calls - how content was organised, how much the component system could absorb without fragmenting - were load-bearing from day one rather than things that could be revisited later.",
     },
   },
 
